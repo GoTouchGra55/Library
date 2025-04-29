@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Library</title>
+</head>
+<body>
+  <div class="top">
+    <h1 class="title">Library</h1>
+    <button class="add">
+      Add a book!
+    </button>
+  </div>
+  <dialog>
+    <form>
+      <h2 class="info">Book Info</h2>
+      <fieldset class="topFs">
+        <label for="bkname">
+          <h4>Book Name:</h4>
+          <input type="text" id="bkname" name="book" required>
+        </label>
+        <label for="athname">
+          <h4>Author:</h4>
+          <input type="text" id="athname" name="author" required>
+        </label>
+        <label for="read">
+          <h4 class="arg">Already read:</h4>
+          <input type="checkbox" name="read" id="read">
+        </label>
+      </fieldset>
+      <fieldset class="btmFs">
+        <label for="close">
+          <input type="button" value="Close" id="close">
+        </label>
+        <label for="sub">
+          <input type="submit" value="Add" id="add">
+        </label>
+      </fieldset>
+    </form>
+  </dialog>
+  <div class="books"></div>
+</body>
+</html>
