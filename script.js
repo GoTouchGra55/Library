@@ -25,11 +25,13 @@ form.addEventListener("submit", (event) => {
   popUp.close();
 })
 
-function Book(name, author, hasRead){
-  this.name = name;
-  this.author = author;
-  this.hasRead = hasRead;
-  this.id = crypto.randomUUID();
+class Book {
+  constructor(name, author, hasRead){
+    this.name = name;
+    this.author = author;
+    this.hasRead = hasRead;
+    this.id = crypto.randomUUID();
+  }
 }
 
 function addBookToLibrary(name, author, hasRead){
